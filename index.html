@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Para Giovanna 🌙</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="sky" class="sky" aria-hidden="true"></div>
+
+  <main class="container" role="main">
+    <header class="header">
+      <h1>Bem-vinda, minha flor.</h1>
+      <p class="lead">Escolha uma experiência — toque nas estrelas ou na lua.</p>
+    </header>
+
+    <section class="panel" aria-label="Conteúdo principal">
+      <div class="left">
+        <div id="moon" class="moon" role="button" tabindex="0" aria-label="Lua - clique para declaração">
+          <div class="moon-inner">🌕</div>
+        </div>
+      </div>
+
+      <div class="right">
+        <section class="love-section">
+          <h2>💖 Eu te amo</h2>
+          <p class="small">Clique nas estrelas para mensagens pequenas, ou toque a lua para ler a minha declaração.</p>
+          <div id="hearts" class="hearts" aria-hidden="true"></div>
+        </section>
+
+        <section class="stars-texts" aria-label="Mensagens das estrelas">
+          <h4>Estrelas que sussurram</h4>
+          <div id="starsList" class="stars-list" aria-live="polite"></div>
+        </section>
+      </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+      <div class="final">Eu, Wen.. O seu Wen, te amo. ❤️</div>
+    </footer>
+  </main>
+
+  <!-- Tooltip for star messages -->
+  <div id="starTooltip" class="tooltip" aria-hidden="true"></div>
+
+  <!-- Modal for moon declaration -->
+  <div id="moonModal" class="modal" aria-hidden="true" role="dialog" aria-label="Declaração para Giovanna">
+    <div class="modal-content">
+      <button id="closeModal" class="modal-close" aria-label="Fechar declaração">✕</button>
+      <h2>Para minha Giovanna</h2>
+      <div class="modal-body" id="moonText">
+        <!-- Declaração inserida por JS -->
+      </div>
+      <div class="modal-sign">Com todo o meu amor — Wen 💌</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
